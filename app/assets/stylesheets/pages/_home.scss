@@ -1,1 +1,42 @@
 // Specific CSS for your home-page
+.container {
+   position: relative;
+   justify-content: space-around;
+   display: flex;
+   justify-content: space-around;
+   flex-grow: 1;
+   img {
+        height: 64vh;
+        margin-top: 48px;
+    }
+}   
+
+#browse {
+    display: flex;
+    justify-content: space-around;
+    background-size: auto;
+    margin-top: 24px;
+}
+
+.btn {
+    // width: 25%;
+    // background-color: $background;
+    
+    color: black;
+    border: solid 1px $background;
+    box-shadow: 0px 4px 4px 4px rgba(0,0,0,0.03);
+    font-family: $navbar-header;
+    font-size: 16px;
+    text-align: center;
+    text-shadow: $text-shadow;
+    letter-spacing: 8px;
+    
+}
+
+// h3 {
+//     font-family: $navbar-header;
+//     font-size: 16px;
+//     text-align: center;
+//     text-shadow: $text-shadow;
+//     letter-spacing: 8px;
+// }
