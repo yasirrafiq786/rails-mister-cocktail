@@ -1,2 +1,13 @@
-<% @cocktails.each do |cocktail|%>
-<% end%>
+<div class="cocktails-container">
+   <% @cocktails.each do |cocktail|%>
+   <div class="card-cocktail">
+      
+        <img src="https://images.unsplash.com/photo-1556855810-ac404aa91e85?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80">
+      
+      <div class="desc-cocktail">
+        <span><%= cocktail.name %></span>
+        <%= link_to 'Details', cocktail_path(cocktail) %>
+      </div>
+    </div>
+    <% end%>
+</div>
