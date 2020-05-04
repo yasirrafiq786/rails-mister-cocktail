@@ -5,7 +5,10 @@
     padding: 8px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 4px;
+    grid-gap: 16px;
+    margin: 16px;
+    width: 100vw;
+    overflow-y: scroll;
 }
 
 .card-cocktail {
@@ -21,6 +24,7 @@
     img {
         object-fit: fill;
         max-width: 96px;
+        border-radius: 8px;
     }
     
     a {
@@ -31,11 +35,15 @@
         letter-spacing: 8px;
     }
 
-    span {
+    p {
+        margin-left: 8px;
+        font-size: large;
         text-align: center;
+        
     }
 }
 
 .desc-cocktail {
     padding: 4px;
+    width: 224px;
 }
