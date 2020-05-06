@@ -3,12 +3,17 @@
    <div class="card-cocktail">
       <div class="desc-cocktail">
         <p><%= cocktail.name %></p>
+        
         <span class="fas fa-star checked"></span>
         <span class="fas fa-star checked"></span>
         <span class="fas fa-star checked"></span>
         <span class="fas fa-star"></span>
         <span class="fas fa-star"></span>
         <span>(<%= rand(50..500) %>)</span>
+        <div><br><br>
+        <span><i class="far fa-smile-beam"></i></span>
+        <span><i class="fas fa-frown"></i></span>
+        </div>
         <%= link_to 'Details', cocktail_path(cocktail) %>
       </div>
     </div>

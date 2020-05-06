@@ -21,12 +21,8 @@
     font-family: $navbar-header;
     position: relative;
     text-shadow: $text-shadow;
-    img {
-        object-fit: fill;
-        max-width: 96px;
-        border-radius: 8px;
-    }
-    
+    background-image: linear-gradient(to top right, rgb(20,20,20), $contrast);
+       
     a {
         position: absolute;
         bottom: 4px;
@@ -34,7 +30,7 @@
         text-decoration: none;
         letter-spacing: 8px;
     }
-
+    
     p {
         
         font-size: large;
@@ -50,5 +46,10 @@
 }
 
 .checked{
+    color: $contrast;
+}
+
+.fa-smile-beam, .fa-frown {
+    font-size: larger;
     color: $contrast;
 }
