@@ -2,18 +2,18 @@
 @import "home";
 
 .cocktails-container {
-    padding: 8px;
+    padding: 24px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 16px;
+    grid-template-columns: repeat( auto-fit, minmax(325px,1fr) );
+    grid-gap: 48px;
     margin: 16px;
-    width: 100vw;
-    overflow-y: scroll;
+    
+    
 }
 
 .card-cocktail {
     display: flex;
-    width: 320px;
+    // width: 320px;
     height: 160px;
     border: solid 1px $background;
     border-radius: 8px;
@@ -29,21 +29,26 @@
     
     a {
         position: absolute;
-        right: 56px;
-        bottom: 10px;
+        bottom: 4px;
+        right: 4px;
         text-decoration: none;
         letter-spacing: 8px;
     }
 
     p {
-        margin-left: 8px;
+        
         font-size: large;
-        text-align: center;
+        text-align: left;
         
     }
 }
 
 .desc-cocktail {
-    padding: 4px;
-    width: 224px;
+    padding: 8px;
+    width: 391px;
+    margin: 0px;
+}
+
+.checked{
+    color: $contrast;
 }

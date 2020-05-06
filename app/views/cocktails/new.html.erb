@@ -1,4 +1,5 @@
 <%= simple_form_for(@cocktail) do |f| %>
 <%= f.input :name, placeholder: "Give your Magic Potion a name" %>
+<%= f.input :photo, as: :file %>
 <%= f.submit %>
 <% end%>
